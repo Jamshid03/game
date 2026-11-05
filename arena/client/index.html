@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cartoon Arena</title><link rel="stylesheet" href="css/style.css"></head><body>
+<canvas id="c"></canvas><div id="conn">Connecting…</div><div id="toast"></div>
+<div id="menu" class="screen on"><h1>CARTOON<br>ARENA</h1>
+ <input id="name" maxlength="12" placeholder="Your name">
+ <button id="bQuick" class="btn y">▶ PLAY (Public Match)</button>
+ <button id="bCreate" class="btn b">Create Private Room</button>
+ <div class="row"><input id="code" maxlength="4" placeholder="CODE"><button id="bJoin" class="btn g">Join</button></div>
+ <p class="hint">WASD move · Mouse aim · Click attack · 1–5 weapons · ESC menu · M mute</p></div>
+<div id="lobby" class="screen"><h2>Lobby <span id="lcode"></span></h2><div id="lstate"></div>
+ <div id="chars"></div><div class="row"><label>Arena <select id="arena"></select></label></div>
+ <div id="plist"></div><div class="row"><button id="bReady" class="btn y">READY</button><button id="bLeave" class="btn r">Leave</button></div></div>
+<div id="hud" class="screen"><div id="timer"></div><div id="score"></div><div id="cdn"></div>
+ <div id="hpwrap"><div id="hpbar"></div><span id="hptxt"></span></div><div id="wbar"></div><div id="dead">KO! Respawning…</div></div>
+<div id="pause" class="screen"><h2>Paused</h2><p class="hint">The match keeps running for everyone.</p>
+ <button id="bResume" class="btn y">Resume</button><button id="bMute" class="btn b">Toggle Sound</button><button id="bQuit" class="btn r">Leave Match</button></div>
+<div id="end" class="screen"><h1 id="etitle"></h1><div id="escores"></div><button id="bAgain" class="btn y">Play Again (Lobby)</button><button id="bMenu" class="btn r">Main Menu</button></div>
+<script src="env.js"></script><script type="module" src="js/main.js"></script></body></html>

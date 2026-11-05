@@ -1,0 +1,4 @@
+{"name":"cartoon-arena","version":"1.0.0","type":"module","main":"server/server.js",
+"scripts":{"start":"node server/server.js","dev":"nodemon server/server.js","build":"node scripts/build.js","test:sim":"node scripts/simtest.js","test:net":"node scripts/nettest.js"},
+"dependencies":{"express":"^4.19.2","socket.io":"^4.7.5"},
+"devDependencies":{"nodemon":"^3.1.0","socket.io-client":"^4.7.5"},"engines":{"node":">=18"}}
